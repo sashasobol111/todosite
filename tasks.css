@@ -1,0 +1,19 @@
+.but-task {
+    border: 1px solid black;
+    background: #afaeae;
+}
+
+.but-task:hover {
+    background: #838383;
+}
+
+.task {
+    border: 1px solid black;
+    background: #d4d4d4;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
