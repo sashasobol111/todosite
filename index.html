@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="tasks.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <div class="CONT">
+        <div class="wrapper">
+
+            <div class="works">
+                <a>Список дел</a>
+            </div>
+
+            <div class="info">
+                <div id="weather"></div>
+                <div id="curses"></div>
+            </div>
+            
+            <script src="weather_get.js"></script>
+            <script src="curses_get.js"></script>
+        </div>
+        </div>
+
+    <div class="container">
+    
+
+        
+        <button id="addTask">Добавить задачу</button>
+        
+        <div id="filter">
+            <input type="text" id="search" placeholder="Поиск по названию...">
+            <select id="sort">
+                <option value="date">По дате</option>
+                <option value="title">По названию</option>
+            </select>
+        </div>
+        
+        <ul id="taskList"></ul>
+    </div>
+
+
+    <div id="taskModal" class="modal">
+        <div class="modalcontent">
+            <span class="closeTask">&times;</span>
+
+            <h2 id="modalTitle">Добавить задачу</h2>
+
+            <input type="text" id="taskTitle" placeholder="Название">
+            <textarea id="taskDesc" placeholder="Описание"></textarea>
+            <input type="date" id="taskDeadline">
+            <input type="text" id="taskTags" placeholder="Теги(через запятую)">
+            <select id="taskStatus">
+
+                <option value="pending">В процессе</option>
+                <option value="completed">Завершена</option>
+
+            </select>
+
+            <p></p>
+            <button id="saveTask">Сохранить</button>
+        </div>
+    </div>
+    <script src="render-tasks.js"></script>
+    <script src="event-listeners.js"></script>
+    <script src="search-sort.js"></script>
+    <script src="tasks-work.js"></script>
+</body>
+</html>
