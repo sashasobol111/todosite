@@ -1,5 +1,4 @@
 .modal {
-
     display: none;
     position: fixed;
     top: 0;
@@ -12,15 +11,8 @@
 }
 
 .modalcontent {
-
     background: white;
     padding: 20px;
     border-radius: 5px;
     width: 200px;
-}
-
-.close {
-
-    float: right;
-    cursor: pointer;
 }

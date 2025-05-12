@@ -5,7 +5,6 @@ body{
 
 
 .wrapper {
-    
     height: 7vh;
     font-size: 16px;
     color: #333333;
@@ -14,7 +13,6 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .container {
@@ -37,7 +35,6 @@ button:hover {
 }
 
 #taskList {
-
     list-style: none;
     padding: 0;
 }
